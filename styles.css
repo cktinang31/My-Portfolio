@@ -148,11 +148,10 @@ span {
 .home-img img {
     position: relative;
     width: 30vw;
-    height: 60vh;
-    border-radius: 50%;
+    height: 80vh;
     box-shadow: 0 0 25px solid #13c4ff;
     cursor: pointer;
-    transition: 0.2s linear;
+    transition: opacity 0.3s ease-in-out;;
 }
 
 .home-img img:hover {
