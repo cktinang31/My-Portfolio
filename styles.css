@@ -12,6 +12,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -20,17 +21,18 @@ body {
     overflow-x: hidden;
     background-color: #011122;
     color: #ffffff;
+    margin-top: 80px;
 }
 
 header {
-    margin-top: 20px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    height: 10vh;
     padding: 1rem 9%;
-    background-color: transparent;
-    filter: drop-shadow(10px);
+    background-color: rgba(1, 17, 34, 0.8);
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,10 +79,6 @@ nav a.active {
         padding: 1rem solid;
         background-color: #011122;
         border-top: 0.1rem solid rgba(0.0.0.0.0.1);
-    }
-
-    nav.active {
-        display: block;
     }
 
     nav a {
@@ -281,108 +279,209 @@ span {
     }
 }
 
-/* About Section Styles */
 .about-section {
+    padding: 40px 20px;
     background-color: #011122;
     color: #ffffff;
-    padding: 5rem 9% 5rem;
-    text-align: center;
 }
 
 .about-content {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
 }
 
-.about-section h2 {
+.section-title {
+    font-size: 3.5em;
+    font-weight: 700;
+    color: #107495;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.section-subtitle {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #13c4ff;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.intro-text, .free-time-text, .problem-solving-text, .future-goals-text {
+    font-size: 1.8em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.contribution-title {
+    font-weight: 700;
+    font-size: 1.3em;
+    color: #011122;
+}
+
+.contribution-role {
+    font-style: italic;
+    color: #888;
+}
+
+.contribution-description {
+    font-size: 1.5em;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.contribution {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.contribution:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.skills-section {
+    background-color: #010f1f;
+    color: #ffffff;
+    padding: 7rem 8%;
+    text-align: center;
+}
+
+.skills-section h2 {
     font-size: 3.5rem;
     font-weight: 700;
-    color: #13c4ff;
-    margin-bottom: 2rem;
+    color: #107495;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
 }
 
-.about-section p {
+.skills-section p {
     font-size: 1.8rem;
-    line-height: 1.6;
-    color: #f1f1f1;
-    margin-bottom: 2rem;
-    text-align: justify;
+    color: #d1d1d1;
+    margin-bottom: 4rem;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.about-section h3 {
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.skill-category {
+    background-color: rgba(1, 17, 34, 0.9);
+    border: 1px solid #13c4ff;
+    border-radius: 1rem;
+    padding: 2rem 3rem;
+    width: calc(33.333% - 2rem);
+    box-shadow: 0 0 15px rgba(19, 196, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(19, 196, 255, 0.5);
+}
+
+.skill-category h3 {
     font-size: 2.5rem;
-    font-weight: 600;
     color: #13c4ff;
-    margin-top: 3rem;
     margin-bottom: 1.5rem;
-}
-
-.skills-list {
-    list-style-type: none;
-    padding: 0;
-    margin-bottom: 2rem;
-    text-align: left;
-    font-size: 1.8rem;
-}
-
-.skills-list li {
-    margin: 0.8rem 0;
-    line-height: 1.6;
-    color: #f1f1f1;
-}
-
-.skills-list li::before {
-    content: "•";
-    color: #13c4ff;
-    margin-right: 0.5rem;
-}
-
-.about-section a.btn {
-    padding: 1.2rem 3rem;
-    background-color: #13c4ff;
-    border-radius: 4rem;
-    font-size: 1.6rem;
-    color: #011122;
-    font-weight: 600;
-    border: 2px solid #13c4ff;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    margin-top: 2rem;
+    border-bottom: 2px solid #107495;
     display: inline-block;
-    transition: 0.3s ease;
+    padding-bottom: 0.5rem;
 }
 
-.about-section a.btn:hover {
-    background-color: #011122;
+.skill-category ul {
+    list-style: none;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.skill-category ul li {
+    font-size: 1.8rem;
+    color: #d1d1d1;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.skill-category ul li i {
+    font-size: 2rem;
     color: #13c4ff;
-    box-shadow: 0 0 25px #13c4ff;
+    transition: color 0.3s ease;
 }
 
-@media (max-width: 995px) {
-    .about-section {
-        padding: 5rem 4rem 5rem;
+.skill-category ul li:hover i {
+    color: #107495;
+}
+
+@media (max-width: 768px) {
+    .skill-category {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 576px) {
+    .skill-category {
+        width: 100%;
     }
 
-    .about-content h2 {
-        font-size: 2.5rem;
-    }
-
-    .about-content p,
-    .skills-list li {
+    .skills-section p {
         font-size: 1.6rem;
     }
 
-    .skills-list {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 90%;
+    .skills-section h2 {
+        font-size: 3rem;
     }
+}
 
-    .about-section a.btn {
-        font-size: 1.4rem;
-        padding: 1rem 2.5rem;
-    }
+.footer {
+    background-color: #011122;
+    color: #f1f1f1;
+    padding: 2rem 9%;
+    text-align: center;
+    border-top: 1px solid #13c4ff;
+    margin-top: 5rem;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-links a {
+    font-size: 1.6rem;
+    color: #13c4ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #107495;
 }

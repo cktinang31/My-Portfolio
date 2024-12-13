@@ -6,23 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Personal Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <a href="#" class="logo">Kristine</a>
+        <a href="#home" class="logo">KACWeb</a>
 
         <nav>
-            <a href="#" class="active">Home</a>
+            <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
-            <a href="#">Skills</a>
-            <a href="#">Experience</a>
-            <a href="#">Contact</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <section class="home">
+    <section id="home" class="home">
         <div class="home-img">
             <img src="images/main.png" alt="">
         </div>
@@ -39,34 +38,96 @@
                 <a href="https://www.facebook.com/profile.php?id=61567377353297"><i class="fa-brands fa-facebook"></i></a>
                 <a href="mailto:kristineannecardosa32@gmail.com"><i class="fa fa-envelope"></i></a>
             </div>
-            <a href="#" class="btn">Hire Me</a>
+
+            <a href="files/cvv.pdf" class="btn" target="_blank">Hire Me</a>
         </div>
     </section>
 
     <section id="about" class="about-section">
         <div class="about-content">
-            <h2>About Me</h2>
-            <p>Hello! I'm Kristine, a passionate IT student with a love for technology and design. I specialize in Front-End Development, UI/UX Design, and creating responsive, user-friendly websites. My goal is to leverage my skills and experience to contribute to innovative projects and grow as a professional.</p>
+            <h2 class="section-title">About Me</h2>
+            <p class="intro-text">I'm Kristine, an IT student passionate about technology and design. I build user-friendly websites that look great and stay up-to-date with the latest trends. With experience in Front-End Development, UI/UX Design, and problem-solving, I aim to exceed expectations with every project.</p>
+            <p class="free-time-text">In my free time, I explore new design tools, contribute to open-source projects, and connect with others in the tech community.</p>
             
-            <p>Throughout my academic journey, I’ve honed my skills in web development, graphic design, and problem-solving. I am constantly eager to learn and apply new technologies to improve the user experience. In my spare time, I enjoy exploring new trends in web design and contributing to open-source projects.</p>
-            
-            <h3>Skills & Expertise</h3>
-            <ul class="skills-list">
-                <li>Front-End Development (HTML, CSS, JavaScript)</li>
-                <li>UI/UX Design (Figma, Adobe XD)</li>
-                <li>Responsive Web Design</li>
-                <li>Version Control (Git, GitHub)</li>
-                <li>Graphic Design (Photoshop, Illustrator)</li>
-                <li>Problem-Solving & Analytical Thinking</li>
-                <li>Project Management & Collaboration</li>
-            </ul>
+            <h3 class="section-subtitle">My Contributions</h3>
+            <div class="contribution">
+                <p class="contribution-title"><strong>CTU - AC Supply Monitoring System</strong></p>
+                <p class="contribution-role">UI/UX Designer, Front-End Developer, Repository Manager (September 2023 – January 2024)</p>
+                <p class="contribution-description">In this project, I designed a responsive interface, managed the repository, collaborated with back-end developers, and optimized performance to enhance user experience.</p>
+            </div>
     
-            <h3>Academic Background</h3>
-            <p>I am currently pursuing a Bachelor's degree in Information Technology at [Your University]. Over the years, I have completed several projects that showcase my ability to blend creativity and technical skills. I’ve participated in various hackathons and internships that have sharpened my skills in real-world applications.</p>
-            
-            <h3>Experience</h3>
-            <p>I have worked as a Front-End Developer and UI/UX Designer on various web    
-        
-    </section>
+            <div class="contribution">
+                <p class="contribution-title"><strong>Automated Cooperative System Web App</strong></p>
+                <p class="contribution-role">UI/UX Designer, Front-End Developer, Repository Manager (March 2024 – Present)</p>
+                <p class="contribution-description">I focus on designing user-centered interfaces, managing the repository, and collaborating with the back-end team to ensure seamless functionality and a great user experience.</p>
+            </div>
+    
+            <h3 class="section-subtitle">My Approach to Problem Solving</h3>
+            <p class="problem-solving-text">I focus on clarity and simplicity in every project. I believe the best solutions are often the easiest ones. I approach each task with an open mind, welcome feedback, and constantly make improvements to ensure the final product is both functional and aesthetically pleasing.</p>
+    
+            <h3 class="section-subtitle">Future Goals</h3>
+            <p class="future-goals-text">I'm excited about taking on new challenges to grow both personally and professionally. I'm particularly interested in expanding my knowledge in full-stack development, honing my leadership skills, and contributing to projects that make a meaningful impact. Ultimately, I aspire to collaborate with talented teams to push the boundaries of creativity and design.</p>
+        </div>
+    </section>    
+
+    <section id="skills" class="skills-section">
+        <h2>My Skills</h2>
+        <p>Take a look at the skills and creativity I bring to every project. From solving problems with smart solutions to designing with users in mind, these abilities are at the core of the work I do.</p>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Front-End Development</h3>
+                <ul>
+                    <li><i class="fa-brands fa-html5"></i> HTML</li>
+                    <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
+                    <li><i class="fa-brands fa-js"></i> JavaScript</li>
+                    <li><i class="fa-brands fa-bootstrap"></i> Bootstrap</li>
+                    <li><i class="fa-solid fa-react"></i> React</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>UI/UX Design</h3>
+                <ul>
+                    <li><i class="fa-solid fa-palette"></i> Figma</li>
+                    <li><i class="fa-solid fa-pencil-ruler"></i> Wireframing</li>
+                    <li><i class="fa-solid fa-laptop-code"></i> Responsive Design</li>
+                    <li><i class="fa-solid fa-chart-bar"></i> User Research</li>
+                    <li><i class="fa-solid fa-drafting-compass"></i> Prototyping</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & Technologies</h3>
+                <ul>
+                    <li><i class="fa-brands fa-git-alt"></i> Git</li>
+                    <li><i class="fa-brands fa-github"></i> GitHub</li>
+                    <li><i class="fa-solid fa-terminal"></i> Command Line</li>
+                    <li><i class="fa fa-vscode"></i> Visual Studio Code</li>
+                    <li><i class="fa-brands fa-npm"></i> npm</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li><i class="fa-solid fa-comments"></i> Communication</li>
+                    <li><i class="fa-solid fa-people-arrows"></i> Team Collaboration</li>
+                    <li><i class="fa-solid fa-tasks"></i> Project Management</li>
+                    <li><i class="fa-solid fa-lightbulb"></i> Creative Problem-Solving</li>
+                    <li><i class="fa-solid fa-hands-helping"></i> Adaptability</li>
+                </ul>
+            </div>
+        </div>
+    </section>     
+       
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Kristine Anne Cardosa. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/kristine-anne-cardosa-b8a3502b6/">LinkedIn</a>
+                <a href="https://github.com/cktinang31">GitHub</a>
+                <a href="mailto:kristineannecardosa32@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
